@@ -5,6 +5,11 @@
       :options="options"
       :data="data"
     />    
+    <GChart
+      type="ColumnChart"
+      :options="options"
+      :data="data"
+    />    
   </div>
 </template>
  
@@ -19,7 +24,7 @@ export default {
   data() {
     return {
       data: [
-          ['Daily Routine', 'Hours per Day'],
+          ['Cases', 'Today'],
           ['Confirmed',     this.particularCountries.today.confirmed],
           ['deaths',      this.particularCountries.today.deaths]
       ],
